@@ -1,0 +1,32 @@
+A repo dedicated to a 5 minute setup:
+
+Built-in:
+  Models-
+    User/Admin
+        - name, email, password_digest, is_admin
+        Seeds
+          admin, nil , abc123, true
+          user, nil, abc123, false
+    Authentication
+        -session tracking
+        * User Auth
+
+Frameworks:
+
+  HTML/CSS
+    Foundation 4 (Default)
+    Twitter Bootstrap
+    Jquery UI
+    ****
+
+  Javascript
+    Jquery (Rails Default)
+    Underscore.js (Default)
+    Moment.js (Default)
+    Morris.js
+    Ember.js
+
+Gems:
+  *Refer to Gemfile for all gems included*
+  Extras:
+

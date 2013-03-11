@@ -1,9 +1,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: DATABASE_NAME
+  database: rails-framework_development
   pool: 5
-  username: USERNAME
+  username: nblanchet
   password:
 
 # production:

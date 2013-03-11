@@ -15,8 +15,10 @@ Frameworks:
 
   HTML/CSS
     Foundation 4 (Default)
+        -->Includes reset.
     Twitter Bootstrap
     Jquery UI
+    mystyle.scss (Empty)
     ****
 
   Javascript
@@ -25,8 +27,10 @@ Frameworks:
     Moment.js (Default)
     Morris.js
     Ember.js
+    myjs.js (Empty)
 
 Gems:
   *Refer to Gemfile for all gems included*
   Extras:
-
+    geocoder
+    BetterErrors

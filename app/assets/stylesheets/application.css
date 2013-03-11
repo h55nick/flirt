@@ -9,5 +9,13 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
+ *= require "foundation-css/normalize.css"
+ *= require "foundation-css/foundation.css"
+ *=# require 'bootstrap-css/bootstrap.css'
+ *=# require 'bootstrap-css/bootstrap-responsive.min.css'
+ *= require 'morris.css'
+ *= require 'mystyle.css'
  */
+
+
+ /*require_tree .*/

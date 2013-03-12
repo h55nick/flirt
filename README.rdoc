@@ -5,8 +5,8 @@ Built-in:
     User/Admin
         - name, email, password_digest, is_admin
         Seeds
-          admin, nil , abc123, true
-          user, nil, abc123, false
+          admin, admin@gmail.com , abc123, true
+          user, user@gmail.com, abc123, false
     Authentication
         -session tracking
         * User Auth
@@ -25,8 +25,7 @@ Frameworks:
     Jquery (Rails Default)
     Underscore.js (Default)
     Moment.js (Default)
-    Morris.js
-    Ember.js
+    Morris.js (Default)
     myjs.js (Empty)
 
 Gems:

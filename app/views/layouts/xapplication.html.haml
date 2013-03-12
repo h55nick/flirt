@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %title RailsFramework
+    = stylesheet_link_tag    "application", :media => "all"
+    = csrf_meta_tags
+  %body
+    .row
+      = render :partial => 'layouts/header'
+    .row
+      = is_auth ? "You are logged on" : "You are logged off"
+      = is_admin ? render(:partial => 'layouts/adminbar') : ""
+      %br/
+      = yield
+    .row
+      = render :partial => 'layouts/footer'
+    / Including JS scripts on bottom to speed upload
+    = javascript_include_tag "application"

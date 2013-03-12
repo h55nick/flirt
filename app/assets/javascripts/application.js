@@ -28,6 +28,7 @@
 //=# require 'foundation-js/foundation.section.js'
 //=# require 'foundation-js/foundation.clearing.js'
 //=# require 'foundation-js/foundation.cookie.js'
+//= require 'morris.js'
 //= require 'underscore.js'
 //= require 'moment.js'
 //= require 'myjs.js'

@@ -2,8 +2,23 @@
 #Pale = C77966
 #Baige = E3CDA4
 #grey = 7E827A
+#dark = 2F343B
+#red = 703030
 
 
-*/body{
+*/
+body{
   background-color: #E3CDA4;
+  color: #2F343B;
+}
+
+a{
+  color: #703030;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+nav.footer{
+
 }

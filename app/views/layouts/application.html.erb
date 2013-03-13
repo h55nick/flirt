@@ -14,14 +14,14 @@
 
 <div class='row'>
     <%= is_auth ? "You are logged on" : "You are logged off" %>
-    <%= is_admin ? render(:partial => 'layouts/adminbar') : "" %>
+
 <br/>
   <%= yield %>
 </div>
 
-<div class='row'>
+
     <%= render :partial => 'layouts/footer'%>
-</div>
+
     <!-- Including JS scripts on bottom to speed upload -->
     <%= javascript_include_tag "application" %>
 </body>

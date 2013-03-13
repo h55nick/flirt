@@ -1,23 +1,25 @@
 class SessionController < ApplicationController
+  def splash
+    @subscriber = Subscriber.new
+  end
+
   def new
   end
+
   def create
     user = User.where(:email => params[:email]).first
-    if user && user.authenticate(params[:password])
+    if user.present? && user.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect_to(root_path)
     else
-      redirect_to(login_path)
+      session[:user_id] = nil
     end
   end
+
+
   def destroy
     session[:user_id] = nil
     redirect_to(root_path)
   end
 
-
-  def splash
-    @subscriber = Subscriber.new
-  end
 
 end

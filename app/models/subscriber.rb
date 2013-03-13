@@ -1,4 +1,12 @@
+# == Schema Information
+#
+# Table name: subscribers
+#
+#  id         :integer          not null, primary key
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 class Subscriber < ActiveRecord::Base
-  attr_accessible :username, :email, :password, :password_confirmation
-  has_secure_password
+  has_one :user, :as => :userable
 end

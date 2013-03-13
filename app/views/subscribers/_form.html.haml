@@ -1,6 +1,6 @@
 .row
   .large-5.columns
-    = form_for @subscriber , :remote => true do |f|
+    = form_for @user, :url => subscribers_path, :remote => true do |f|
       = f.label :username
       = f.text_field :username, :autofocus => true
       = f.label :email

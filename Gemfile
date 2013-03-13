@@ -5,8 +5,7 @@ gem 'pg'
 gem 'jquery-rails'
 gem 'haml'
 gem 'bcrypt-ruby'
-
-gem 'geocoder'
+#gem 'geocoder'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -23,4 +22,9 @@ group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'meta_request'
+
+  gem 'rspec-rails'
+  gem 'capybara' #testing framework - testing web browser
+  gem 'launchy'
+  gem 'database_cleaner' #clears database after each test.
 end

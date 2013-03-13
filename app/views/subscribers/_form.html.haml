@@ -1,0 +1,14 @@
+.row
+  .large-5.columns
+    = form_for @subscriber , :remote => true do |f|
+      = f.label :username
+      = f.text_field :username, :autofocus => true
+      = f.label :email
+      = f.text_field :email
+      = f.label :password
+      = f.password_field :password
+      = f.label :password_confirmation
+      = f.password_field :password_confirmation
+      = f.submit(nil,:class => 'button')
+      = button_to_function('Cancel', 'cancel_subscriber_form()',:class=>'button')
+  .large-7.columns

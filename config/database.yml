@@ -1,15 +1,24 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: rails-framework_development
+  database: flirt_development
   pool: 5
   username: nblanchet
   password:
 
-# production:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: rails-framework_production
-#   pool: 5
-#   username: rails-framework
-#   password:
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: flirt_test
+  pool: 5
+  username: nblanchet
+  password:
+
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: flirt_production
+  pool: 5
+  username: nblanchet
+  password:

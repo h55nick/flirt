@@ -8,13 +8,9 @@
 </head>
 <body>
 
-<div class='row'>
    <%= render :partial => 'layouts/header'%>
-</div>
 
 <div class='row'>
-    <%= is_auth ? "You are logged on" : "You are logged off" %>
-
 <br/>
   <%= yield %>
 </div>

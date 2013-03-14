@@ -1234,11 +1234,11 @@ blockquote p {
   font-size: 1em;
   background-color: #2ba6cb;
   border-color: #2284a1;
-  color: white; }
+  color: #2F343B; }
   .button:hover, .button:focus {
     background-color: #2284a1; }
   .button:hover, .button:focus {
-    color: white; }
+    color: #2F343B; }
   .button.secondary {
     background-color: #e9e9e9;
     border-color: #d0d0d0;
@@ -1248,9 +1248,9 @@ blockquote p {
     .button.secondary:hover, .button.secondary:focus {
       color: #333333; }
   .button.success {
-    background-color: #5da423;
+    background-color: #7E827A;
     border-color: #457a1a;
-    color: white; }
+    color: #2F343B; }
     .button.success:hover, .button.success:focus {
       background-color: #457a1a; }
     .button.success:hover, .button.success:focus {
@@ -1258,11 +1258,11 @@ blockquote p {
   .button.alert {
     background-color: #c60f13;
     border-color: #970b0e;
-    color: white; }
+    color: #703030; }
     .button.alert:hover, .button.alert:focus {
       background-color: #970b0e; }
     .button.alert:hover, .button.alert:focus {
-      color: white; }
+      color: #703030; }
   .button.large {
     padding-top: 1em;
     padding-right: 2em;
@@ -2251,7 +2251,7 @@ form.custom {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: #111111; }
+  background: #703030; }
 
 .fixed {
   width: 100%;
@@ -2265,7 +2265,7 @@ form.custom {
   height: 45px;
   line-height: 45px;
   position: relative;
-  background: #111111; }
+  background: #703030; }
   .top-bar ul {
     margin-bottom: 0;
     list-style: none; }
@@ -2334,7 +2334,7 @@ form.custom {
     height: auto;
     background: transparent; }
     .top-bar.expanded .title-area {
-      background: #111111; }
+      background: #703030; }
     .top-bar.expanded .toggle-topbar a {
       color: #888888; }
       .top-bar.expanded .toggle-topbar a span {
@@ -2371,7 +2371,7 @@ form.custom {
     font-weight: bold;
     background: #333333; }
     .top-bar-section ul li > a:hover {
-      background: #2b2b2b; }
+      background: #703030; }
     .top-bar-section ul li > a.button {
       background: #2ba6cb;
       font-size: 0.8125em; }
@@ -2390,7 +2390,7 @@ form.custom {
       .top-bar-section ul li > a.button.alert:hover {
         background: #970b0e; }
   .top-bar-section ul li.active a {
-    background: #2b2b2b; }
+    background: #703030; }
   .top-bar-section .has-form {
     padding: 15px; }
   .top-bar-section .has-dropdown {
@@ -2425,7 +2425,7 @@ form.custom {
       .top-bar-section .dropdown li.title h5 {
         margin-bottom: 0; }
         .top-bar-section .dropdown li.title h5 a {
-          color: white;
+          color: #703030;
           line-height: 22.5px;
           display: block; }
     .top-bar-section .dropdown label {
@@ -2445,7 +2445,7 @@ form.custom {
 
 @media only screen and (min-width: 58.75em) {
   .top-bar {
-    background: #111111;
+    background: #703030;
     *zoom: 1;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
@@ -2468,7 +2468,7 @@ form.custom {
       position: relative;
       top: 8px; }
     .top-bar.expanded {
-      background: #111111; }
+      background: #703030; }
 
   .contain-to-grid .top-bar {
     max-width: 62.5em;
@@ -2490,7 +2490,7 @@ form.custom {
     .top-bar-section li a:not(.button) {
       padding: 0 15px;
       line-height: 45px;
-      background: #111111; }
+      background: #703030; }
       .top-bar-section li a:not(.button):hover {
         background: black; }
     .top-bar-section .has-dropdown > a {
@@ -2532,13 +2532,13 @@ form.custom {
     .top-bar-section > ul > .divider {
       border-bottom: none;
       border-top: none;
-      border-right: solid 1px #2b2b2b;
-      border-left: solid 1px black;
+      border-right: solid 1px #703030;
+      border-left: solid 1px #602020;
       clear: none;
       height: 45px;
       width: 0px; }
     .top-bar-section .has-form {
-      background: #111111;
+      background: #703030;
       padding: 0 15px;
       height: 45px; }
     .top-bar-section ul.right li .dropdown {
@@ -2896,7 +2896,7 @@ form.custom {
     clear: both; }
 
 .clearing-blackout {
-  background: #111111;
+  background: #703030;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -2930,7 +2930,7 @@ form.custom {
   margin-bottom: 0;
   text-align: center;
   bottom: 0;
-  background: #111111;
+  background: #703030;
   width: 100%;
   padding: 10px 30px;
   position: absolute;
@@ -2987,7 +2987,7 @@ form.custom {
     display: none; }
 
   .clearing-assembled .clearing-container .carousel {
-    background: #111111;
+    background: #703030;
     height: 150px;
     margin-top: 5px; }
     .clearing-assembled .clearing-container .carousel > ul {
@@ -3024,7 +3024,7 @@ form.custom {
         .clearing-assembled .clearing-container .carousel > ul li.visible {
           opacity: 1; }
   .clearing-assembled .clearing-container .visible-img {
-    background: #111111;
+    background: #703030;
     overflow: hidden;
     height: 75%; }
 
@@ -3151,7 +3151,7 @@ kbd {
   padding: 0.1875em 0.625em 0.25em;
   font-size: 0.875em;
   background-color: #2ba6cb;
-  color: #fff; }
+  color: #2F343B; }
   .label.radius {
     -webkit-border-radius: 3px;
     border-radius: 3px; }
@@ -3208,7 +3208,7 @@ kbd {
       background: transparent; }
     .pagination li.current a {
       background: #2ba6cb;
-      color: white;
+      color: #2F343B;
       font-weight: bold;
       cursor: default; }
       .pagination li.current a:hover, .pagination li.current a:focus {
@@ -3364,7 +3364,7 @@ kbd {
       height: 0;
       padding: 0;
       list-style: none;
-      border-top-color: #e6e6e6; }
+      border-top-color: #703030; }
 
 /* Side Nav */
 .sub-nav {
@@ -3395,7 +3395,7 @@ kbd {
       background: #2ba6cb;
       padding: 0.1875em 0.5625em;
       cursor: default;
-      color: white; }
+      color: #2F343B; }
 
 /* Foundation Switches */
 @media only screen {
@@ -3633,7 +3633,7 @@ table {
   max-width: 85%;
   left: 50%;
   width: 100%;
-  color: white;
+  color: #2F343B;
   background: black;
   -webkit-border-radius: 3px;
   border-radius: 3px; }

@@ -14,6 +14,8 @@ group :assets do
 end
 
 group :development, :test do
+  gem 'guard-rspec'
+  gem 'rb-fsevent'
   gem 'pry-rails'
   gem 'pry-debugger'
   gem 'pry-stack_explorer'

@@ -1,2 +1,6 @@
-$('#subscriber_form').empty();
-$('#subscriber_form').text('You have created an account')
+<% if @user.valid? %>
+  $('#subscriber_form').empty();
+  $('#subscriber_form').text('You have created an account');
+<% else %>
+  $('#subscriber_form').empty().append("<%=j render :partial =>'form' %>");
+<%end%>

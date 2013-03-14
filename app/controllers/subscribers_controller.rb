@@ -4,8 +4,10 @@ class SubscribersController < ApplicationController
   end
 
   def create
-      u1 = User.create(params[:user])
-      s1 = Subscriber.create(tagline:"Change me",gender:"Select",age:10)
-      s1.user = u1
+        @user = User.new(params[:user])
+        if @user.save
+            s1 = Subscriber.create(tagline:"Change me",gender:"Select",age:10)
+            s1.user = @user
+        end
   end
 end

@@ -17,7 +17,9 @@ a{
   text-decoration: none;
   font-weight: bold;
 }
-
+.errordiv{
+  margin-bottom: 30px;
+}
 
 nav.footer{
 

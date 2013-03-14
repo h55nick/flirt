@@ -19,21 +19,28 @@ describe 'Subscribers' do
   end
 
   describe 'POST /subscribers' do
-    it 'creates a new subscriber', :js => true do
-      #Set
-      visit root_path
-      click_link('Register')
-      fill_in('Username',:with=>'Bob')
-      fill_in('Email',:with=>'Bob@gmail.com')
-      fill_in('user_password',:with=>'a')
-      fill_in('user_password_confirmation',:with=>'a')
-      click_button('Create User')
+        it 'creates a new subscriber', :js => true do
+            #Set
+            visit root_path
+            click_link('Register')
+            fill_in('Username',:with=>'Bob')
+            fill_in('Email',:with=>'Bob@gmail.com')
+            fill_in('user_password',:with=>'a')
+            fill_in('user_password_confirmation',:with=>'a')
+            click_button('Create User')
 
-      #Tests
-      page.should have_text('You have created an account')
-      page.should_not have_button('Create User')
-      expect(Subscriber.first.user.username).to eq 'Bob'
-    end
+            #Tests
+            page.should have_text('You have created an account')
+            page.should_not have_button('Create User')
+            expect(Subscriber.first.user.username).to eq 'Bob'
+        end
+        it 'it does not create a new subscriber due to failing validation', :js => true do
+            visit root_path
+            click_link('Register')
+            click_button('Create User')
+            page.should have_button('Create User')
+            page.should have_text('Please fix these 3 errors')
+      end
   end
 
 

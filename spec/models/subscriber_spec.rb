@@ -2,15 +2,17 @@
 #
 # Table name: subscribers
 #
-#  id         :integer          not null, primary key
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
-#  gender     :string(255)
-#  age        :integer
-#  occupation :string(255)
-#  hobbies    :string(255)
-#  tagline    :string(255)
-#  bio        :string(255)
+#  id              :integer          not null, primary key
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#  gender          :string(255)
+#  age             :integer
+#  occupation      :string(255)
+#  hobbies         :string(255)
+#  tagline         :string(255)
+#  bio             :string(255)
+#  subscription_id :integer
+#  expires         :date
 #
 
 
@@ -33,6 +35,14 @@ describe Subscriber do
 
     end
   end
+  describe '#expires' do
+    it 'has an expiration date' do
+        subscriber = Subscriber.create(:tagline=>'a',gender:"m",age:10)
+        subscriber.expires = Date.current
+        subscriber.save
+        expect(subscriber.expires).to eq Date.current
+    end
+  end
 
     describe '.create' do
           it 'has an id' do
@@ -42,6 +52,21 @@ describe Subscriber do
           it 'fails validation if tagline, gender are not present and age is integer old' do
             subscriber = Subscriber.create
             expect(subscriber.id).to be nil
+          end
+      end
+
+      describe '#has_subscription' do
+          it 'subscriber has subscription' do
+              subscriber = Subscriber.create(:tagline=>'a',gender:"m",age:10)
+              subscription =Subscription.create
+              subscriber.subscription = subscription
+              subscriber.save
+              expect(subscriber.has_subscription?).to eq true
+          end
+          it 'subscriber DNH subscription' do
+              subscriber = Subscriber.create(:tagline=>'a',gender:"m",age:10)
+              expect(subscriber.has_subscription?).to eq false
+
           end
       end
 

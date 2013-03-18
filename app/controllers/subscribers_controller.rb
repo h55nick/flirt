@@ -10,4 +10,11 @@ class SubscribersController < ApplicationController
             s1.user = @user
         end
   end
+
+  def purchase
+      plan = Subscription.where(plan:params[:plan]).first();
+      @auth.sub.subscription = plan
+      @auth.sub.expires = Time.now + (!plan.duration.nil? ? plan.duration : 0)
+  end
+
 end

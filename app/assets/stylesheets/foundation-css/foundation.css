@@ -1232,13 +1232,13 @@ blockquote p {
   padding-bottom: 0.8125em;
   padding-left: 1.5em;
   font-size: 1em;
-  background-color: #2ba6cb;
-  border-color: #2284a1;
-  color: #2F343B; }
+  background-color: #703030;
+  border-color: #612121;
+  color: white; }
   .button:hover, .button:focus {
-    background-color: #2284a1; }
+    background-color: #2F343B; }
   .button:hover, .button:focus {
-    color: #2F343B; }
+    color: white; }
   .button.secondary {
     background-color: #e9e9e9;
     border-color: #d0d0d0;

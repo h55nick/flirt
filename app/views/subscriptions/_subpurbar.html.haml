@@ -1,0 +1,3 @@
+-if (@auth.present? && !@auth.admin && !@auth.sub.subscription.present?)
+  -subscription_levels.each do |subscription|
+    =button_to(subscription.plan, purchase_subscribers_path(plan:subscription.plan) ,remote:true,:class=>'button radius inline')

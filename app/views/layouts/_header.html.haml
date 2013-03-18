@@ -70,7 +70,11 @@
       %li.divider
       %li
         =@auth.nil? ? link_to('Register', new_subscriber_path, :remote => true ) : link_to(@auth.username,"/login",:method=>"DELETE", :remote => true)
-
       %li.divider
       %li
-        =@auth.nil? ? link_to('Login', "/login", :remote => true ) : link_to("Settings")
+        =@auth.nil? ? link_to('Login', "/login", :remote => true ) : link_to("Settings","#")
+      -if !@auth.nil? && @auth.sub.present? && !@auth.sub.subscription_id.nil?
+        %li.divider
+        %li
+          =link_to("Profile","#")
+

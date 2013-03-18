@@ -14,6 +14,8 @@ group :assets do
 end
 
 group :development, :test do
+  gem 'factory_girl_rails'
+  gem 'coffee-rails-source-maps'
   gem 'guard-rspec'
   gem 'rb-fsevent'
   gem 'pry-rails'

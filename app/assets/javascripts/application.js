@@ -31,6 +31,7 @@
 //= require 'morris.js'
 //= require 'underscore.js'
 //= require 'moment.js'
+//=require 'home.js'
 //= require 'myjs.js'
 
 

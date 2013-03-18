@@ -11,5 +11,5 @@
       = f.label :password_confirmation
       = f.password_field :password_confirmation
       = f.submit(nil,:class => 'button')
-      = button_to_function('Cancel', 'cancel_subscriber_form()',:class=>'button')
+      = link_to('Cancel',"#", :'data-clear-form'=> true ,:class=>'button')
   .large-7.columns

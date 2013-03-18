@@ -19,4 +19,13 @@ class User < ActiveRecord::Base
   validates :email, :uniqueness => true
   validates :username, :presence => true
   has_secure_password
+
+  def sub
+    self.userable.is_a?(Subscriber) ? self.userable : false
+  end
+
+  def admin
+    self.userable.is_a?(Administrator) ? self.userable : false
+  end
+
 end

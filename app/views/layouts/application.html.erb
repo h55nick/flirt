@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Flirt</title>
+  <title>Yakker</title>
 
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= csrf_meta_tags %>
@@ -20,5 +20,6 @@
 
     <!-- Including JS scripts on bottom to speed upload -->
     <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag params[:controller] %>
 </body>
 </html>

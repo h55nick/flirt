@@ -1,6 +1,7 @@
 <% if @user.valid? %>
   $('#subscriber_form').empty();
   $('#subscriber_form').text('You have created an account');
+  $('#subscriber_form').fadeOut(6000,function(){$('#subscriber_form').empty()})
 <% else %>
   $('#subscriber_form').empty().append("<%=j render :partial =>'form' %>");
 <%end%>

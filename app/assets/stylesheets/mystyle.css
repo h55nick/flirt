@@ -24,3 +24,6 @@ a{
 nav.footer{
 
 }
+.inline{
+  display: inline-block;
+}
